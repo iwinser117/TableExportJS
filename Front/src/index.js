@@ -1,9 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter,Router, Route,Routes } from "react-router-dom";
-
+import { TemaProvider } from "./utils/TemaContext";
 import App from "./routes/App";
-import './css/index.css';
-import './css/App.css';
+import "./css/index.css";
+import "./css/App.css";
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(
+  <React.StrictMode>
+    <TemaProvider>
+      <App />
+    </TemaProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
+);

@@ -1,0 +1,71 @@
+/* EstilosTabla.css */
+
+.tabla {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.celdaCabecera {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.celda {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.boton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.tabla-container {
+  max-width: 800px;
+  max-height: 50vh;
+  overflow-x: auto;
+  margin: 0 auto;
+  color: #000;
+  position: relative; 
+}
+
+/* Nuevos estilos para las celdas de la fila superior */
+.fila-superior {
+  position: sticky;
+  top: 0;
+  z-index: 2; /* Ajusta según sea necesario */
+  background-color: #f2f2f2;
+}
+
+/* Resto de los estilos... */
+
+.resizer {
+  display: inline-block;
+  background: #000;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(50%);
+  z-index: 1;
+  touch-action: none;
+  user-select: none;
+}
+
+.resizer.isResizing {
+  background: red;
+}
