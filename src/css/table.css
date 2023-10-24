@@ -4,6 +4,8 @@
   border-collapse: collapse;
   width: 100%;
   overflow-x: auto;
+  height: 100vh;
+  background: #dfdfdf;
 }
 
 .celdaCabecera {
@@ -35,7 +37,7 @@
 
 .tabla-container {
   max-width: 800px;
-  max-height: 50vh;
+  max-height: 100vh;
   overflow-x: auto;
   margin: 0 auto;
   color: #000;

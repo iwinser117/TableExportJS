@@ -28,7 +28,7 @@ body {
 
 /* Estilos para el tema oscuro */
 .dark {
-  background-color: #151515;
+  background-color: #000000e2;
   color: #fff;
 }
 
@@ -40,7 +40,8 @@ body {
 
 
 .tema-button {
-  background: none;
+  border-radius: 50%;
+  height: 28px;
   border: none;
   cursor: pointer;
   font-size: 24px;
@@ -62,7 +63,9 @@ body {
 }
 
 .img-logo{
-  background: none;
+  border-radius: 50%;
+  height: 28px;
+  background: white;
   border: none;
   cursor: pointer;
   font-size: 24px;
